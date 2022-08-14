@@ -18,6 +18,8 @@ function doubleChar(str) {
   //answer 2
   const doubleChar = (str) => str.split("").map(c => c + c).join("");
 
+  //answer 3
+
   function doubleChar(str) {
     return [...str].map(v=>v+v).join('');
   }
