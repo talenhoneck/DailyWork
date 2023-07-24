@@ -43,3 +43,17 @@ function openOrSenior(data) {
 //     console.log("Result:", deepEqual); // Output the result to the console
 //   });
 // });
+
+
+// Alternatives
+function openOrSenior(data){
+    var result = [];
+    data.forEach(function(member) {
+      if(member[0] >= 55 && member[1] > 7) {
+        result.push('Senior');
+      } else {
+        result.push('Open');
+      }
+    })
+    return result;
+  }
